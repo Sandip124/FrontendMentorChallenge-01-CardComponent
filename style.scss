@@ -1,0 +1,104 @@
+  $headingFont: 18px;
+  $statFont: .8em;
+  $fontWeightBold : 700;
+  $fontWeightNormal : 400;
+  $fontFamily :'Kumbh Sans';
+
+  $darkCyan : hsl(185, 75%, 39%);
+  $veryDarkDesaturatedBlueAlpha : hsla(229, 23%, 23%,.5);
+  $darkGrayishBlue : hsl(227, 10%, 46%);
+  $white : #fff;
+  $darkGray : hsl(0, 0%, 59%);
+  $lightGray : hsl(0deg, 0%, 90%);
+
+
+   body {
+      font-family: $fontFamily;
+      background-color: $darkCyan;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    body:before{
+      content: url('/images/bg-pattern-top.svg');
+      position: absolute;
+      top: -40%;
+      right: 60%;
+    }
+
+    body:after{
+      content: url('/images/bg-pattern-bottom.svg');
+      position: absolute;
+      top: 35%;
+      left: 55%;
+    }
+ 
+
+    h3 {
+      font-size: $headingFont;
+      font-weight: $fontWeightBold;
+    }
+
+     .card {
+      width: 350px;
+      margin: 0px auto;
+      background-color: $white;
+      border-radius: 16px;
+      overflow: hidden;
+      z-index: 1;
+      box-shadow: 1px 1px 16px $veryDarkDesaturatedBlueAlpha;
+    }
+
+    .card-header {
+      background-image: url('/images/bg-pattern-card.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 140px;
+    }
+
+    .card-body {
+      text-align: center;
+      border-bottom: 1px solid $lightGray;
+      width: 100%;
+    }
+
+    .user-address {
+      color: $darkGray;
+    }
+
+    .user-heading>span {
+      font-weight: $fontWeightNormal;
+      color: $darkGray;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .user-image img {
+      border-radius: 50%;
+      margin-top: -50%;
+      border: 8px solid $white;
+    }
+
+    .stats {
+      width: 280px;
+      text-align: center;
+      display: inline-grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-areas:
+        "stat stat stat"
+    }
+
+    .stat>p {
+      color: $darkGray;
+      font-size: $statFont;
+    }

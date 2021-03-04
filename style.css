@@ -1,0 +1,108 @@
+body {
+  font-family: "Kumbh Sans";
+  background-color: #19a2ae;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+body:before {
+  content: url("/images/bg-pattern-top.svg");
+  position: absolute;
+  top: -40%;
+  right: 60%;
+}
+
+body:after {
+  content: url("/images/bg-pattern-bottom.svg");
+  position: absolute;
+  top: 35%;
+  left: 55%;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card {
+  width: 350px;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-box-shadow: 1px 1px 16px rgba(45, 50, 72, 0.5);
+          box-shadow: 1px 1px 16px rgba(45, 50, 72, 0.5);
+}
+
+.card-header {
+  background-image: url("/images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 140px;
+}
+
+.card-body {
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+}
+
+.user-address {
+  color: #969696;
+}
+
+.user-heading > span {
+  font-weight: 400;
+  color: #969696;
+}
+
+.card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-image img {
+  border-radius: 50%;
+  margin-top: -50%;
+  border: 8px solid #fff;
+}
+
+.stats {
+  width: 280px;
+  text-align: center;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-areas: "stat stat stat";
+}
+
+.stat > p {
+  color: #969696;
+  font-size: 0.8em;
+}
+/*# sourceMappingURL=style.css.map */
